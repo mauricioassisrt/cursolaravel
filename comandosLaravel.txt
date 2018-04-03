@@ -51,10 +51,21 @@ após isso rodar este comando que gerará uma nova key para o laravel
 
 php artisan key:generate
 
+migrations e model criando 
+migrations possuem a estrutura da tabela os campos 
+
+modell representa a entidade de uma tabela no banco de dados 
+
+criando um novo model 
+php artisan make:model Models\Balance -m \\-m cria o modelo e migration já automaticamento 
 
 após isso o projeto está pronto se ouver migrations é só rodar o comando para gerar a base de dados 
 as tabelas nela 
 php artisan migrate
+
+apagando migrations modells
+apaga a migration e o models desejado após isso é necessario efeutar o comando composer dump-autoload
+é necessario efetuar este procedimento devido ao auto load e composer da aplicação 
 
 após isso para inserir dados automaticamente, este comando insere todos os dados que ouver configurado 
 php artisan db:seed
