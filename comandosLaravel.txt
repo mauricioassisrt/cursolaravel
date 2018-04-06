@@ -51,6 +51,9 @@ após isso rodar este comando que gerará uma nova key para o laravel
 
 php artisan key:generate
 
+php artisan make:seed
+
+
 migrations e model criando 
 migrations possuem a estrutura da tabela os campos 
 
@@ -70,4 +73,8 @@ apaga a migration e o models desejado após isso é necessario efeutar o comando c
 após isso para inserir dados automaticamente, este comando insere todos os dados que ouver configurado 
 php artisan db:seed
 
+
+Routes web.php tem conteudos responsavel por criar as rotas das paginas, nesta pasta apontamos onde irá indexar
+o controler que fará esta parte de configuração 
+comando para criar um controler php artisan make:controller nomedocontroler
 

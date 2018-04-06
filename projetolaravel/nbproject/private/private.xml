@@ -5,6 +5,8 @@
         <group>
             <file>file:/C:/xampp/htdocs/projeto/projetolaravel/resources/views/site/home/index.blade.php</file>
             <file>file:/C:/xampp/htdocs/projeto/projetolaravel/routes/web.php</file>
+            <file>file:/C:/xampp/htdocs/projeto/projetolaravel/resources/views/admin/home/index.blade.php</file>
+            <file>file:/C:/xampp/htdocs/projeto/projetolaravel/app/Http/Controllers/Admin/AdminController.php</file>
             <file>file:/C:/xampp/htdocs/projeto/projetolaravel/app/Http/Controllers/SiteControle.php</file>
         </group>
     </open-files>

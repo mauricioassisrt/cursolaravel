@@ -1,17 +1,8 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-$this->get('/', 'SiteControle@index');
 
+$this->get('admin', 'Admin\AdminController@index')->name('admin.home');
+//está puxando da pasta App/http/controlers sitecontroler comando para crialo php artisan make:controller nomedocontroler
+$this->get('/', 'SiteControle@index')->name('home');
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
