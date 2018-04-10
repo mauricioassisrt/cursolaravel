@@ -99,11 +99,16 @@ return [
             'text' => 'Financeiro',
             'icon' => 'money',
             'submenu' => [
-            [
-                'text' => 'saldo',
-                'url' => 'balance',
-                'icon' => 'credit-card',
-             ]
+                [
+                    'text' => 'Saldo',
+                    'url' => 'admin/balance',
+                    'icon' => 'credit-card',
+                ],
+                [
+                    'text' => 'Historico',
+                    'url' => 'admin/historic',
+                    'icon' => 'history',
+                ]
             ],
         ]
     ],
