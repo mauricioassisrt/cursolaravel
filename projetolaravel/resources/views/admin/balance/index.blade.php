@@ -15,15 +15,16 @@
 <div class="box">
     <div class="box-header">
         <div class="box-header"> 
-            <a href="" class="btn btn-primary">Recarregar <i class="fa fa-cart-plus"></i></a>
+            <a href="{{route('balance.deposit')}}" class="btn btn-primary">Recarregar <i class="fa fa-cart-plus"></i></a>
             <a href="" class="btn btn-danger">Sacar <i class="fa fa-cart-plus"></i></a>
         </div>
         <div class="small-box bg-green">
             <div class="inner">
-                <h3>R$ 90,00</h3>
+                <h3>R${{number_format($amount, 2, '.', '') }}</h3>
 
-
+                
             </div>
+            
             <div class="icon">
                 <i class="ion ion-cash"></i>
             </div>

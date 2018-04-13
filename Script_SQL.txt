@@ -1,0 +1,45 @@
+-- MySQL Workbench Forward Engineering
+
+SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
+SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
+SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
+
+-- -----------------------------------------------------
+-- Schema mydb
+-- -----------------------------------------------------
+-- -----------------------------------------------------
+-- Schema igreja
+-- -----------------------------------------------------
+
+-- -----------------------------------------------------
+-- Schema igreja
+-- -----------------------------------------------------
+CREATE SCHEMA IF NOT EXISTS `igreja` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci ;
+-- -----------------------------------------------------
+-- Schema igrejaprojeto
+-- -----------------------------------------------------
+USE `igreja` ;
+
+-- -----------------------------------------------------
+-- Table `igreja`.`campista`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `igreja`.`campista` (
+  `idcampista` INT NOT NULL,
+  `nomeSobrenome` VARCHAR(45) NULL,
+  `telefone` VARCHAR(45) NULL,
+  `dataNascimento` VARCHAR(45) NULL,
+  `idade` VARCHAR(45) NULL,
+  `endereco` VARCHAR(45) NULL,
+  `bairro` VARCHAR(45) NULL,
+  `cep` VARCHAR(45) NULL,
+  `rg` VARCHAR(45) NULL,
+  `cpf` VARCHAR(45) NULL,
+  `cidade` VARCHAR(45) NULL,
+  `estado` VARCHAR(45) NULL,
+  PRIMARY KEY (`idcampista`))
+ENGINE = InnoDB;
+
+
+SET SQL_MODE=@OLD_SQL_MODE;
+SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
+SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
