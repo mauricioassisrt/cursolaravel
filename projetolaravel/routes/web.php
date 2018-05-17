@@ -7,9 +7,7 @@ $this->group(['middleware' => ['auth'], 'namespace ' => 'Admin', 'prefix' => 'ad
     // balance -no caso é a view o nome da pasta
     $this->get('balance', 'Admin\BalanceController@index')->name('admin.balance');
     $this->get('deposit', 'Admin\BalanceController@deposit')->name('balance.deposit');
-     $this->post('deposit', 'Admin\BalanceController@depositStore')->name('deposit.store');
-
-    
+    $this->post('deposit', 'Admin\BalanceController@depositStore')->name('deposit.store');
 });
 
 //está puxando da pasta App/http/controlers sitecontroler comando para crialo php artisan make:controller nomedocontroler
